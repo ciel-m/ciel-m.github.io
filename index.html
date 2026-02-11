@@ -67,11 +67,24 @@
       margin-bottom: 10px;
     }
 
-    .role-header {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      font-weight: bold;
-    }
+.role-header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  font-weight: bold;
+}
+
+.role-title {
+  justify-self: start;
+}
+
+.role-company {
+  justify-self: center;
+}
+
+.role-date {
+  justify-self: end;
+}
 
     .company {
       font-style: italic;
@@ -129,8 +142,9 @@
 
     <div class="role">
       <div class="role-header">
-        <span>Software Engineer — Microsoft</span>
-        <span>Aug 2022 – Present</span>
+        <span class="role-title">Software Engineer</span>
+        <span class="role-company">Microsoft</span>
+        <span class="role-date">Aug 2022 – Present</span>
       </div>
       <ul>
         <li>Developed a data pipeline that feeds cross-service signals into an AI model and implemented a daily evaluation job to measure treatment vs. control performance of model iterations across prompts.</li>
@@ -143,8 +157,9 @@
 
     <div class="role">
       <div class="role-header">
-        <span>Software Engineer — ThoughtWire</span>
-        <span>Sep 2021 – Jul 2022</span>
+        <span class="role-title">Software Engineer</span>
+        <span class="role-company">ThoughtWire</span>
+        <span class="role-date">Sep 2021 – Jul 2022</span>
       </div>
       <ul>
         <li>Migrated ThoughtWire’s infrastructure to reduce the amount of Hazelcast grids to a singular instance, facilitating containerization and improving cloud readiness of the platform.</li>
@@ -154,8 +169,9 @@
 
     <div class="role">
       <div class="role-header">
-        <span>Software Developer — Municipal Property Assessment Corp.</span>
-        <span>Aug 2019 – Feb 2021</span>
+        <span class="role-title">Software Engineer</span>
+        <span class="role-company">Municipal Property Assessment Corp.</span>
+        <span class="role-date">Aug 2019 – Feb 2021</span>
       </div>
       <ul>
         <li>Lead the development of a web application that facilitates MPAC’s on/offboarding processes using Angular, Spring Boot and AWS, automating the process completely.</li>
@@ -174,15 +190,21 @@
       <li><strong>Tools:</strong> AWS, Azure, Git, Linux, Docker, Kubernetes, Gradle, Jira, JWT, CI/CD, Kusto</li>
     </ul>
   </section>
+</section>
 
   <section>
     <h2>Education</h2>
     <div class="divider"></div>
-    <p>
-      <strong>Honours Bachelor of Science</strong><br>
-      University of Toronto — Computer Science (Software Engineering Specialist)<br>
-      Sep 2015 – Aug 2019
-    </p>
+    <div class="role">
+      <div class="role-header">
+        <span class="role-title">Honours Bachelor of Science</span>
+        <span class="role-company">University of Toronto</span>
+        <span class="role-date">Sep 2015 – Aug 2019</span>
+      </div>
+      <ul>
+        <li>Major: Computer Science - Software Engineering Specialist</li>
+      </ul>
+    </div>
   </section>
 
   <section>
